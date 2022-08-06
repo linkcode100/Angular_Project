@@ -1,0 +1,9 @@
+<!--p>{{ fileUpload.name }}</p>
+<a href="{{fileUpload.url}}" style="float:center">Download</a>
+<button (click)="deleteFileUpload(fileUpload)"
+  class="btn btn-danger btn-sm" style="float: right">
+  Delete
+</button-->
+
+<a href="{{fileUpload.url}}" class="btn btn-outline-info" type="button" download>Download</a>
+<a class="btn btn-outline-danger ms-2" type="button" (click)="deleteFileUpload(fileUpload)">Delete</a>
